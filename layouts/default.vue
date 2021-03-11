@@ -24,7 +24,6 @@
                     <NuxtLink to="/resume">Resume</NuxtLink>
                 </li>
             </ul>
-            <hr/>
         </header>
         <div>
             <Nuxt />
@@ -48,6 +47,9 @@ header ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7;
+    border-radius: 0.5rem;
+    padding: 1rem;
 }
 
 header ul li {

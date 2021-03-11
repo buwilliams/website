@@ -53,5 +53,12 @@ export default {
         port: 3000,
         timing: false
     },
-    buildDir: 'dist'
+    buildDir: 'dist',
+    generate: {
+        async routes () {
+            const { $content } = require('@nuxt/content')
+            const files = await $content({ deep: true }).only(['path']).fetch()
+            return files.map(file => file.path === '/index' ? '/' : file.path.replace('/articles', ''))
+        }
+    }
 };

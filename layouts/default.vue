@@ -9,6 +9,9 @@
                     <a href="/">Home</a>
                 </li>
                 <li>
+                    <a href="/projects">Projects</a>
+                </li>
+                <li>
                     <a href="/programming">Programming</a>
                 </li>
                 <li>
@@ -18,10 +21,7 @@
                     <a href="/life">Life</a>
                 </li>
                 <li>
-                    <a href="/projects">Projects</a>
-                </li>
-                <li>
-                    <a href="/resume">Resume</a>
+                    <a href="/resume">Resume/Contact</a>
                 </li>
             </ul>
             <hr/>

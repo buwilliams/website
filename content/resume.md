@@ -8,7 +8,7 @@ title: Resume
 
 - Atlanta, GA 30318
 - (678) 697-5188 or buddywilliams [at] gmail [dot] com
-- [Twitter](https://twitter.com/buwilliams), [Github](https://github.com/buwilliams), [LinkedIn](https://www.linkedin.com/in/buddylwilliams/), [Blog](https://buwilliams.medium.com/)
+- [Twitter](https://twitter.com/buwilliams), [Github](https://github.com/buwilliams), [LinkedIn](https://www.linkedin.com/in/buddylwilliams/), [Portfolio Website](https://buddywilliams.dev)
 
 ## About
 - Experienced full-stack developer focused on the front-end and what’s best for users. I specialize in technology innovation within startups. I spend most of my time thinking about the future and what I can do to shape it.

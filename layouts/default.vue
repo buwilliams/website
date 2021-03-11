@@ -6,22 +6,22 @@
                     <h3>Buddy Williams</h3>
                 </li>
                 <li>
-                    <a href="/">Home</a>
+                    <NuxtLink to="/">Home</NuxtLink>
                 </li>
                 <li>
-                    <a href="/projects">Projects</a>
+                    <NuxtLink to="/projects">Projects</NuxtLink>
                 </li>
                 <li>
-                    <a href="/programming">Programming</a>
+                    <NuxtLink to="/programming">Programming</NuxtLink>
                 </li>
                 <li>
-                    <a href="/business">Business</a>
+                    <NuxtLink to="/business">Business</NuxtLink>
                 </li>
                 <li>
-                    <a href="/life">Life</a>
+                    <NuxtLink to="/life">Life</NuxtLink>
                 </li>
                 <li>
-                    <a href="/resume">Resume/Contact</a>
+                    <NuxtLink to="/resume">Resume</NuxtLink>
                 </li>
             </ul>
             <hr/>

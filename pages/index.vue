@@ -12,15 +12,15 @@
         </p>
         <p>I've been a software developer for twenty-one years! I've seen some things... You may be interested in some of these posts:</p>
         <div v-for="(article, index) of articles" :key="index">
-            <NuxtLink :to="article.url">
+            <NuxtLink :to="article.url" class="article">
                 <h2>{{ article.title }}</h2>
+                <p>{{ article.description }}</p>
+                <p>
+                    <small>
+                        Created {{ formatDate(article.createdAt) }} (last updated on {{ formatDate(article.updatedAt) }})
+                    </small>
+                </p>
             </NuxtLink>
-            <p>{{ article.description }}</p>
-            <p>
-                <small>
-                    Created {{ formatDate(article.createdAt) }} (last updated on {{ formatDate(article.updatedAt) }})
-                </small>
-            </p>
         </div>
         <p v-show="articles.length === 0">
             No posts yet.
@@ -71,5 +71,14 @@ export default {
   content: "";
   clear: both;
   display: table;
+}
+
+a.article {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.article:hover h2 {
+    text-decoration: underline;
 }
 </style>

@@ -2,11 +2,11 @@
     <div>
         <h1>Projects</h1>
         <div v-for="article of articles" :key="article.slug">
-            <NuxtLink :to="{ name: 'projects-slug', params: { slug: article.slug } }">
+            <NuxtLink :to="{ name: 'projects-slug', params: { slug: article.slug } }" class="article">
                 <h2>{{ article.title }}</h2>
+                <p>{{ article.description }}</p>
+                <p>Updated: {{ formatDate(article.updatedAt) }}</p>
             </NuxtLink>
-            <p>{{ article.description }}</p>
-            <p>Updated: {{ formatDate(article.updatedAt) }}</p>
         </div>
         <p v-show="articles.length === 0">
             No posts yet.
@@ -32,3 +32,14 @@ export default {
     }
 }
 </script>
+
+<style lang="postcss" scoped>
+a.article {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.article:hover h2 {
+    text-decoration: underline;
+}
+</style>

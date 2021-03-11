@@ -62,4 +62,15 @@ header ul li h3 {
     margin-top: auto;
     margin-bottom: auto;
 }
+
+@media only screen and (max-width: 1100px) {
+    header ul {
+        display: block;
+    }
+
+    header ul li a {
+        display: inline-block;
+        margin: 0.2rem 0;
+    }
+}
 </style>

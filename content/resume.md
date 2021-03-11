@@ -18,7 +18,11 @@ title: Resume
 
 ## Current Experience (2015-Present)
 
-**Technical Lead, Workstorm, Mar 2018 - Present**
+**Interviewing, Present**
+
+- I'm currently seeking a new role.
+
+**Technical Lead, Workstorm, Mar 2018 - Mar 2021**
 
 - Created a Microsoft Outlook Add-in which allowed customers to schedule video conferences without leaving Outlook. This resulted in a more salable product for users who prefer Outlook. Increases in sales figures were not shared with me.
 - Enabled clients to chat and have video conferences on mobile by implementing two Cordova apps (iOS & Android) which resulted in increased product sales and team communication while traveling.

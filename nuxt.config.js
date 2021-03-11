@@ -17,6 +17,14 @@ export default {
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon-32x32.png' },
             {
+                rel: "preconnect",
+                href: "https://fonts.gstatic.com"
+            },
+            {
+                href: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+                rel: "stylesheet"
+            },
+            {
                 rel: 'stylesheet',
                 type: 'text/css',
                 href: 'https://cdn.jsdelivr.net/npm/water.css@2/out/water.css',

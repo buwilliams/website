@@ -15,6 +15,9 @@
                     <a href="/business">Business</a>
                 </li>
                 <li>
+                    <a href="/life">Life</a>
+                </li>
+                <li>
                     <a href="/projects">Projects</a>
                 </li>
                 <li>
@@ -29,7 +32,17 @@
     </div>
 </template>
 
-<style lang="postcss" scoped>
+<style lang="postcss">
+html {
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+
 header ul {
     display: flex;
     list-style: none;

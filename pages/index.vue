@@ -48,7 +48,6 @@ export default {
             });
         });
         collection = _.sortBy(collection, ['createdAt']).reverse();
-        console.log(collection);
         return { articles: collection };
     },
 

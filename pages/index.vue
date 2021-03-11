@@ -8,6 +8,9 @@
             <p>{{ article.description }}</p>
             <p>Updated: {{ formatDate(article.updatedAt) }}</p>
         </div>
+        <p v-show="articles.length === 0">
+            No posts yet.
+        </p>
     </div>
 </template>
 

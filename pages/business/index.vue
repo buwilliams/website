@@ -2,12 +2,15 @@
     <div>
         <h1>Business</h1>
         <div v-for="article of articles" :key="article.slug">
-            <NuxtLink :to="{ name: 'programming-slug', params: { slug: article.slug } }">
+            <NuxtLink :to="{ name: 'business-slug', params: { slug: article.slug } }">
                 <h2>{{ article.title }}</h2>
             </NuxtLink>
             <p>{{ article.description }}</p>
             <p>Updated: {{ formatDate(article.updatedAt) }}</p>
         </div>
+        <p v-show="articles.length === 0">
+            No posts yet.
+        </p>
     </div>
 </template>
 

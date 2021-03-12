@@ -33,7 +33,7 @@ title: Resume
 
 **Founder, Buddy Lee Technology, LLC, May 2015 - Mar 2018**
 
-- Created no code app platform. This resulted in funding by a private investor and several pitches to customers over a two-years.
+- Created no code app platform and won private investor funding. The platform was closed due to disagreements between the investor and myself.
 - Worked with leadership to create an IT Asset Lifecycle Management platform by using Ruby on Rails and SQL. This resulted in a new product line for the hardware reseller.
 - Worked with a leadership to build an iPaaS (integration platform as a service) for the education industry using Ruby and JavaScript which contributed to the company being acquired by Microsoft.
 

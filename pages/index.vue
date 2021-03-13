@@ -39,27 +39,10 @@ export default {
     },
 
     async asyncData({ $content, params }) {
-        /*
-        let collection = [];
-        ['business','life','programming','projects'].forEach(async subdir => {
-            let articles = await $content(`articles/${subdir}`)
-                .only(['title', 'description', 'img', 'slug', 'author', 'createdAt', 'updatedAt'])
-                .sortBy('createdAt', 'desc')
-                .fetch();
-            console.log(subdir, articles);
-            articles.forEach(article => {
-                collection.push({
-                    url: `/${subdir}/${article.slug}`,
-                    ...article
-                });
-            });
-        });
-        collection = _.sortBy(collection, ['createdAt']).reverse();
-        */
-
         let articles = await $content('articles', { deep: true })
             .only(['title', 'description', 'img', 'slug', 'author', 'createdAt', 'updatedAt', 'path'])
             .sortBy('createdAt', 'desc')
+            .limit(50)
             .fetch();
 
         articles = _.each(articles, article => {

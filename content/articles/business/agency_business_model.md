@@ -1,6 +1,7 @@
 ---
 title: Agency business model
 description: Move marketing dollars away from tech into better marketing campaigns by leveraging technical platforms.
+createdAt: "2020-07-09T00:00:00.000Z"
 ---
 
 I want to criticize the business model of small to mid sized marketing agencies from a technical and strategic point-of-view. My motivation is simple, my partner works in marketing. I’ve seen my partner go through so much unnecessary pain. The margins of agency life are small and the end product is usually subpar. I’ve seen how money is wasted and mismanaged on these projects. This results in unhappy clients getting subpar branding efforts. Nobody wins.

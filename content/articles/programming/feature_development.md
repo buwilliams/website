@@ -3,6 +3,7 @@ title: Feature Development with N.A.M.
 description: Feature development strategies or how to approach introducing change into your system with N.A.M.
 img: /images/nam.png
 alt: N.A.M. Feature Development
+createdAt: "2018-06-08T00:00:00.000Z"
 ---
 
 Yesterday morning, while working on a new feature, an idea came to me or rather a “pause.” I began to wonder at what I was doing on auto-pilot. So, I stopped and began asking myself questions instead. I started with, “What am I doing?” and “Are there other ways to achieve this goal?” The result of these questions led me to an idea I’m calling, “Feature Development Strategies with nam.” I believe you need some context so let’s start there.

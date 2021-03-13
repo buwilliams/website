@@ -3,6 +3,7 @@ title: Social Media
 description: JSON REST-style API that analyzes data from SocialMedia, a totally legit social media platform.
 img: /images/socialmedia.png
 alt: Screenshot of Social Media UI
+createdAt: "2021-02-18:00:00.000Z"
 ---
 
 ## Overview

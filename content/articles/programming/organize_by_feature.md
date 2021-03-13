@@ -1,6 +1,7 @@
 ---
 title: Organize by feature
 description: Code organization that scales
+createdAt: "2018-09-21:00:00.000Z"
 ---
 
 For the last decade I’ve been organizing projects by Feature. It has a lot of nice properties but many developers do not know about it. So, I’m sharing!

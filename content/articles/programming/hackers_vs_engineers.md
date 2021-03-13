@@ -3,6 +3,7 @@ title: Hackers vs. Engineers
 description: Comparing the differences between the two.
 img: /images/hackers.png
 alt: Hacker
+createdAt: "2020-01-29T00:00:00.000Z"
 ---
 
 The hacker asks, “What makes this work?” The engineer asks, “How should this work?” That’s difference between a hacker and an engineer. The hacker is primarily concerned with results. The engineer is primarily concerned with design. There are benefits and drawbacks to each perspective.

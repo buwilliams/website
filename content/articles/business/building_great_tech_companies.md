@@ -1,6 +1,7 @@
 ---
 title: Building great tech companies
 description: Companies where devs can get money, purpose, and trust
+createdAt: "2018-06-11T00:00:00.000Z"
 ---
 
 Our company is currently in search of a new CTO. In Lieu of this process, it has made me think about what is means to build a great tech company. In this article you’ll find my beliefs for doing just that and you won’t be surprised that they apply broadly. It’s the first thing to realize: building a great tech company is about building a great company overall by understanding the relationship you have with your workers.

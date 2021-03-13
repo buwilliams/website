@@ -11,8 +11,8 @@
             <a href="/life">life</a>.
         </p>
         <p>I've been a software developer for twenty-one years! I've seen some things... You may be interested in some of these posts:</p>
-        <div v-for="(article, index) of articles" :key="index">
-            <NuxtLink :to="article.url" class="article">
+        <div v-for="article in articles" :key="article.path">
+            <NuxtLink :to="article.path" class="article">
                 <h2>{{ article.title }}</h2>
                 <p>{{ article.description }}</p>
                 <p>
@@ -32,7 +32,14 @@
 import _ from 'lodash';
 
 export default {
+    data() {
+        return {
+            articles: []
+        };
+    },
+
     async asyncData({ $content, params }) {
+        /*
         let collection = [];
         ['business','life','programming','projects'].forEach(async subdir => {
             let articles = await $content(`articles/${subdir}`)
@@ -48,7 +55,20 @@ export default {
             });
         });
         collection = _.sortBy(collection, ['createdAt']).reverse();
-        return { articles: collection };
+        */
+
+        let articles = await $content('articles', { deep: true })
+            .only(['title', 'description', 'img', 'slug', 'author', 'createdAt', 'updatedAt', 'path'])
+            .sortBy('createdAt', 'desc')
+            .fetch();
+
+        articles = _.each(articles, article => {
+            article.path = article.path.replace('/articles', '');
+        });
+
+        console.log('articles', articles);
+
+        return { articles };
     },
 
     methods: {

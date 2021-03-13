@@ -1,6 +1,7 @@
 ---
 title: Learning Chess
 description: Having the right approach is the key to fast improvement.
+createdAt: "2020-12-24T00:00:00.000Z"
 ---
 
 I have used much of my time in life learning new skills. You could say I’m a skills collector. I’ve learned many skills: cooking, career, acroyoga, yoga, skating, and juggling to name a few. And now… chess.

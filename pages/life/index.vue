@@ -33,14 +33,3 @@ export default {
     }
 }
 </script>
-
-<style lang="postcss" scoped>
-a.article {
-    color: inherit;
-    text-decoration: none;
-}
-
-a.article:hover h2 {
-    text-decoration: underline;
-}
-</style>

@@ -17,7 +17,7 @@
                 <p>{{ article.description }}</p>
                 <p>
                     <small>
-                        Created {{ formatDate(article.createdAt) }} (last updated on {{ formatDate(article.updatedAt) }})
+                        Created: {{ formatDate(article.createdAt) }}
                     </small>
                 </p>
             </NuxtLink>

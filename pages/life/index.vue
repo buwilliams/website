@@ -6,7 +6,7 @@
             <NuxtLink :to="{ name: 'life-slug', params: { slug: article.slug } }" class="article">
                 <h2>{{ article.title }}</h2>
                 <p>{{ article.description }}</p>
-                <p>Updated: {{ formatDate(article.updatedAt) }}</p>
+                <p>Created: {{ formatDate(article.createdAt) }}</p>
             </NuxtLink>
         </div>
         <p v-show="articles.length === 0">
@@ -19,7 +19,7 @@
 export default {
     async asyncData({ $content, params }) {
         const articles = await $content('articles/life')
-            .only(['title', 'description', 'img', 'alt', 'slug', 'author', 'updatedAt'])
+            .only(['title', 'description', 'img', 'alt', 'slug', 'author', 'createdAt', 'updatedAt'])
             .sortBy('createdAt', 'desc')
             .fetch();
         return { articles }

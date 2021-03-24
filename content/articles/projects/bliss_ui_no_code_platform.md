@@ -258,8 +258,7 @@ module.exports = {
 
 ## The power of these concepts
 
-With these three concepts: `data structure`, `editor`, and `compiler` I was able to build a platform that could build it's self. The 
-goal was to remove the barriers to inspiration and I came close to achieving that. 
+With these three concepts: `data structure`, `editor`, and `compiler` I was able to build a platform that could build it's self. You may have asked the question, "I see javascript, how is this a no-code app platofmr?" The answer is simple, The Editor, taking the pieces that require code and tranform them into components that do not. I had big plans for the Editor. The goal was to remove the barriers to inspiration and I came close to achieving that. 
 
 ## What happened to Bliss UI?
 

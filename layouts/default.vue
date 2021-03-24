@@ -3,7 +3,7 @@
         <header>
             <ul>
                 <li>
-                    <h3>Buddy Williams</h3>
+                    <h3><img class="logo" src="/favicon-32x32.png"> Buddy Williams</h3>
                 </li>
                 <li>
                     <NuxtLink to="/">Home</NuxtLink>
@@ -68,6 +68,13 @@ body {
     font-weight: 400;
     background-color: var(--light-bg);
     color: var(--light-fg);
+}
+
+.logo {
+    width: 1.17em;
+    height: 1.17em;
+    margin-bottom: -0.25em;
+    margin-right: 0.25em;
 }
 
 header ul {

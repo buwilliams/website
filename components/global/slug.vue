@@ -1,8 +1,9 @@
 <template>
     <article>
         <h1>{{ article.title }}</h1>
-        <p v-show="article.description">{{ article.description }}</p>
-        <hr>
+        <code v-show="article.description">
+            {{ article.description }}
+        </code>
         <img v-show="article.img" :src="article.img" :alt="article.alt" />
         <nuxt-content :document="article" />
         <hr>

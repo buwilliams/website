@@ -1,16 +1,19 @@
 <template>
     <div>
         <img class="col" src="/images/buddy_small.jpg" width="50%" alt="Picture of Buddy Williams" />
-        <h1>Portfolio</h1>
+        <h1>What is this?</h1>
         <p>
-            This website was created to 
+            This website exists to 
             <a href="/projects">showcase my projects</a> for those who 
-            are interested in working with me. I also enjoy writing about 
+            are interested in working with me. My unique apporach to 
+            topics such as 
             <a href="/programming">programming</a>, 
             <a href="/business">business</a>, and 
-            <a href="/life">life</a>.
+            <a href="/life">life</a>, I hope inspires you.
         </p>
-        <p>I've been a software developer for twenty-one years! I've seen some things... You may be interested in some of these posts:</p>
+        <p>I've been programming for twenty-four years and founded several 
+            tech companies. You may be interested in some of 
+            these posts:</p>
         <div v-for="article in articles" :key="article.path">
             <NuxtLink :to="article.path" class="article">
                 <h2>{{ article.title }}</h2>

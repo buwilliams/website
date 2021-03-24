@@ -24,6 +24,12 @@
                     <NuxtLink to="/resume">Resume</NuxtLink>
                 </li>
             </ul>
+            <div>
+                <p class="text-center">
+                    Part-time mad computer scientist, full-time lover of the extraordinary.
+                </p>
+                <hr>
+            </div>
         </header>
         <div>
             <Nuxt />
@@ -46,6 +52,9 @@
     --dark-link-hover-fg: rgb(114, 114, 255);
 }
 
+.text-center {
+    text-align: center;
+}
 
 body {
     font-family: 'Roboto', sans-serif;

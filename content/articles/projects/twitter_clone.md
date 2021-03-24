@@ -1,6 +1,6 @@
 ---
 title: Twitter Clone
-description: Experiments with Dolt and Dolthub via node.js, express.js, and mysql.
+description: Simple experiments with Dolt and Dolthub via node.js, express.js, and mysql.
 createdAt: "2021-03-07:00:00.000Z"
 ---
 

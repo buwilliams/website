@@ -6,10 +6,11 @@ createdAt: "2018-05-25:00:00.000Z"
 
 ## I've been putting this off
 
-It's time to tell you about my baby: Bliss UI. For years, I've kept the source code private and refrained from writing 
-about this project. It's a sore subject because I was so passionate about it's mission and the work I did to make a 
-dream a reality. Where's the problem you ask? Well... it failed. It didn't fail because of design or technology. It failed 
-for very human reasons which I'll get into below. But, the time has come to talk about it. So, let's get to it.
+It's time to tell you about my baby: Bliss UI. I wrote this project from 2016-2018. For years, I've kept the source 
+code private and refrained from writing about it. It's a sore subject because I was so passionate 
+about it's mission and the work I did to make a dream a reality. Where's the problem you ask? Well... it failed. 
+It didn't fail because of design or technology. It failed for very human reasons which I'll get into 
+below. But, the time has come to talk about it. So, let's get to it.
 
 ## Big problems with App development
 
@@ -49,8 +50,6 @@ The five parts of Bliss UI:
 5. Marketplace - shareable components, websites, and integrations
 
 Bliss UI uses a special Data Structure to define applications. The Editor is used to quickly iterate app design. The Compiler then generates an app based on customer preference. Finally, we Deploy this app to the internet and Marketplace.
-
-We are doing this today.
 
 ## Preview of Bliss UI
 

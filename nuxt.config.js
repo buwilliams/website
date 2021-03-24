@@ -1,3 +1,9 @@
+const DynamicRoutes = async () => {
+    const { $content } = require('@nuxt/content');
+    const files = await $content({ deep: true }).only(['path']).fetch()
+    return files.map(file => file.path === '/index' ? '/' : file.path.replace('/articles', ''))
+}
+
 export default {
     ssr: false,
     target: 'static',
@@ -41,7 +47,10 @@ export default {
     plugins: [],
     components: true,
     buildModules: [],
-    modules: ['@nuxt/content'],
+    modules: [
+        '@nuxt/content',
+        '@nuxtjs/sitemap'
+    ],
     build: {
         transpile: []
     },
@@ -56,9 +65,18 @@ export default {
     buildDir: 'dist',
     generate: {
         async routes () {
-            const { $content } = require('@nuxt/content')
+            const { $content } = require('@nuxt/content');
             const files = await $content({ deep: true }).only(['path']).fetch()
             return files.map(file => file.path === '/index' ? '/' : file.path.replace('/articles', ''))
         }
-    }
+    },
+    sitemap: {
+        hostname: 'https://www.buddywilliams.dev',
+        gzip: true,
+        async routes () {
+            const { $content } = require('@nuxt/content');
+            const files = await $content({ deep: true }).only(['path']).fetch()
+            return files.map(file => file.path === '/index' ? '/' : file.path.replace('/articles', ''))
+        }
+    },
 };

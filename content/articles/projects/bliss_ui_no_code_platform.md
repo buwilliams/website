@@ -1,7 +1,7 @@
 ---
 title: Bliss UI
 description: No-code app platform to remove barriers to inspiration
-createdAt: "2018-05-25:00:00.000Z"
+createdAt: "2021-03-24:00:00.000Z"
 ---
 
 ## I've been putting this off

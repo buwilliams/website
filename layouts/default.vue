@@ -56,6 +56,12 @@
     text-align: center;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;

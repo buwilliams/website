@@ -57,6 +57,12 @@ export default {
         return { articles };
     },
 
+    head() {
+        return {
+            title: 'Projects, Business, Programming, and Life by Buddy Williams'
+        };
+    },
+
     methods: {
         formatDate(date) {
             const options = { year: 'numeric', month: 'long', day: 'numeric' }

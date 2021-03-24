@@ -21,6 +21,12 @@ export default {
         return { article }
     },
 
+    head() {
+        return {
+            title: 'Buddy Williams\' Resume'
+        };
+    },
+
     methods: {
         formatDate(date) {
             const options = { year: 'numeric', month: 'long', day: 'numeric' }

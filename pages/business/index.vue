@@ -24,6 +24,12 @@ export default {
         return { articles }
     },
 
+    head() {
+        return {
+            title: 'Business by Buddy Williams'
+        };
+    },
+
     methods: {
         formatDate(date) {
             const options = { year: 'numeric', month: 'long', day: 'numeric' }

@@ -9,6 +9,12 @@ export default {
         return { article }
     },
 
+    head() {
+        return {
+            title: this.article.title + ' by Buddy Williams'
+        };
+    },
+
     methods: {
         formatDate(date) {
             const options = { year: 'numeric', month: 'long', day: 'numeric' }

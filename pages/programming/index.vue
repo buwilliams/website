@@ -25,6 +25,12 @@ export default {
         return { articles }
     },
 
+    head() {
+        return {
+            title: 'Programming by Buddy Williams'
+        };
+    },
+
     methods: {
         formatDate(date) {
             const options = { year: 'numeric', month: 'long', day: 'numeric' }

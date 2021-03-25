@@ -15,16 +15,18 @@
 </template>
 
 <script>
+import HeadFn from './head.js';
+const title = 'Buddy Williams \' Resume';
+const description = 'Career details in resume format.';
+const img = '/android-chrome-192x192.png';
+const Head = HeadFn(title, description, img);
+
 export default {
+    ...Head,
+
     async asyncData({$content, params}) {
         const article = await $content('resume').fetch()
         return { article }
-    },
-
-    head() {
-        return {
-            title: 'Buddy Williams\' Resume'
-        };
     },
 
     methods: {

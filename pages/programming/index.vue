@@ -16,19 +16,21 @@
 </template>
 
 <script>
+import HeadFn from '../head.js';
+const title = 'Programming by Buddy Williams';
+const description = 'List of programming articles';
+const img = '/android-chrome-192x192.png';
+const Head = HeadFn(title, description, img);
+
 export default {
+    ...Head,
+
     async asyncData({ $content, params }) {
         const articles = await $content('articles/programming')
             .only(['title', 'description', 'img', 'alt', 'slug', 'author', 'createdAt', 'updatedAt'])
             .sortBy('createdAt', 'desc')
             .fetch();
         return { articles }
-    },
-
-    head() {
-        return {
-            title: 'Programming by Buddy Williams'
-        };
     },
 
     methods: {

@@ -33,8 +33,15 @@
 
 <script>
 import _ from 'lodash';
+import HeadFn from './head.js';
+const title = 'Buddy Williams Website';
+const description = 'Projects, Business, Programming, and Life by Buddy Williams';
+const img = '/android-chrome-192x192.png';
+const Head = HeadFn(title, description, img);
 
 export default {
+    ...Head,
+
     data() {
         return {
             articles: []
@@ -55,12 +62,6 @@ export default {
         console.log('articles', articles);
 
         return { articles };
-    },
-
-    head() {
-        return {
-            title: 'Projects, Business, Programming, and Life by Buddy Williams'
-        };
     },
 
     methods: {

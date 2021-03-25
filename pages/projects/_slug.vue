@@ -3,16 +3,14 @@
 </template>
 
 <script>
+import Head from '../slug_head.js';
+
 export default {
+    ...Head,
+
     async asyncData({ $content, params }) {
         const article = await $content('articles/projects', params.slug).fetch()
         return { article }
-    },
-
-    head() {
-        return {
-            title: this.article.title + ' by Buddy Williams'
-        };
     },
 
     methods: {

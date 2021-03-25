@@ -4,7 +4,7 @@
         <code v-show="article.description">
             {{ article.description }}
         </code>
-        <img v-show="article.img" :src="article.img" :alt="article.alt" />
+        <img v-show="article.img" :src="article.img" :alt="article.alt" class="header-image" />
         <nuxt-content :document="article" />
         <hr>
         <p>
@@ -32,3 +32,9 @@ export default {
     }
 }
 </script>
+
+<style>
+.header-image {
+    margin-top: 1rem;
+}
+</style>

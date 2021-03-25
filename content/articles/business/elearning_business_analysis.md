@@ -1,7 +1,7 @@
 ---
 title: E-learning business analysis
 description: Education first-principles, SWOT analysis, and roadmap.
-createdAt: "2021-03-25T00:00:00.000Z"
+createdAt: "2021-03-25T12:00:00.000Z"
 img: /images/elearning.jpg
 alt: E-learning
 ---

@@ -15,14 +15,12 @@
 </template>
 
 <script>
-import HeadFn from '../head.js';
-const title = 'Business by Buddy Williams';
-const description = 'List of articles on business';
-const img = '/android-chrome-192x192.png';
-const Head = HeadFn(title, description, img);
-
 export default {
-    ...Head,
+    staticHead: {
+        title: 'Business by Buddy Williams',
+        description: 'List of articles on business',
+        img: '/android-chrome-192x192.png'
+    },
 
     async asyncData({ $content, params }) {
         const articles = await $content('articles/business')

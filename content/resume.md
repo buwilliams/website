@@ -1,5 +1,6 @@
 ---
 title: Resume
+description: Professional career details in resume format
 ---
 
 [Download PDF version here](https://github.com/buwilliams/resume/raw/main/Buddy%20Williams%20-%20Resume.pdf)

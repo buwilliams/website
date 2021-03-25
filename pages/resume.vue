@@ -15,15 +15,7 @@
 </template>
 
 <script>
-import HeadFn from './head.js';
-const title = 'Resume';
-const description = 'Professional career details in resume format';
-const img = '/android-chrome-192x192.png';
-const Head = HeadFn(title, description, img);
-
 export default {
-    ...Head,
-
     async asyncData({$content, params}) {
         const article = await $content('resume').fetch()
         return { article }

@@ -1,3 +1,6 @@
+import StaticHead from './static_head.js';
+import _ from 'lodash';
+
 export default {
     ssr: false,
     target: 'static',
@@ -60,8 +63,15 @@ export default {
     generate: {
         async routes () {
             const { $content } = require('@nuxt/content');
-            const files = await $content({ deep: true }).only(['path']).fetch()
-            return files.map(file => file.path === '/index' ? '/' : file.path.replace('/articles', ''))
+            let files = await $content({ deep: true }).fetch()
+            files = _.filter(files, file => file.path.indexOf('/drafts') === -1);
+            return files.map(file => file.path === '/index' ? '/' : file.path.replace('/articles', ''));
+        }
+    },
+    hooks: {
+        'generate:page': function({ route, path, html }) {
+            const static_pages = ['/', '/business', '/life', '/programming', '/projects'];
+            StaticHead(static_pages, route, path, html);
         }
     },
     sitemap: {

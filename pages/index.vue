@@ -33,14 +33,13 @@
 
 <script>
 import _ from 'lodash';
-import HeadFn from './head.js';
-const title = 'Website';
-const description = 'Projects, Business, Programming, and Life by Buddy Williams';
-const img = '/android-chrome-192x192.png';
-const Head = HeadFn(title, description, img);
 
 export default {
-    ...Head,
+    staticHead: {
+        title: 'Resume',
+        description: 'Professional career details in resume format',
+        img: '/android-chrome-192x192.png'
+    },
 
     data() {
         return {

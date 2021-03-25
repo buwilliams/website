@@ -16,8 +16,8 @@
 
 <script>
 import HeadFn from './head.js';
-const title = 'Buddy Williams \' Resume';
-const description = 'Career details in resume format.';
+const title = 'Resume';
+const description = 'Professional career details in resume format';
 const img = '/android-chrome-192x192.png';
 const Head = HeadFn(title, description, img);
 

@@ -34,7 +34,7 @@
 <script>
 import _ from 'lodash';
 import HeadFn from './head.js';
-const title = 'Buddy Williams Website';
+const title = 'Website';
 const description = 'Projects, Business, Programming, and Life by Buddy Williams';
 const img = '/android-chrome-192x192.png';
 const Head = HeadFn(title, description, img);

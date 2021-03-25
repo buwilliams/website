@@ -11,12 +11,12 @@
     "generate": "nuxt generate"
   },
   "devDependencies": {
-    "nuxt": "^2.15.3"
-  },
-  "dependencies": {
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/content": "^0.3.0",
     "@nuxtjs/sitemap": "^2.4.0",
+    "nuxt": "^2.15.3"
+  },
+  "dependencies": {
     "lodash": "^4.17.21"
   }
 }
